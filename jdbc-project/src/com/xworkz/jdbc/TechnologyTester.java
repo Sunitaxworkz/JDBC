@@ -18,7 +18,7 @@ public class TechnologyTester {
 			connection = DriverManager.getConnection(url, username, password);
 			String querry = "insert into Technology_Table values(4,'Web Technology','Software','Jousiah Bussing')";//creating connection 2nd step
 
-			Statement statement = connection.createStatement();// to create statement 3rd step of jdbc
+			Statement statement = connection.createStatement();// to create statement 3rd step of jdbc  to execute the querries
 			statement.execute(querry);// 4th step of jdbc
 			System.out.println(connection);
 
