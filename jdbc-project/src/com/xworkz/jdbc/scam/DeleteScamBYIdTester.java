@@ -14,7 +14,7 @@ public class DeleteScamBYIdTester {
 		Connection connection = null;
 		try {
 			Connection connect = DriverManager.getConnection(url, username, password);
-			String deleteSql = "delete from scam_table where s_id=13";
+			String deleteSql = "delete from new_table where s_id=13";
 			Statement state = connect.createStatement();
 			state.execute(deleteSql);
 			System.out.println(connect);
